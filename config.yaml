@@ -1,0 +1,34 @@
+
+default_chain: stride
+chains:
+  gaia:
+    key: wallet
+    chain-id: GAIA
+    rpc-addr: http://stride.stake-take.com:46657
+    grpc-addr: http://stride.stake-take.com:9490
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001uatom
+    key-directory: /home/str/.icq/keys
+    debug: true
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+  stride:
+    key: wallet
+    chain-id: STRIDE-TESTNET-2
+    rpc-addr: http://stride.stake-take.com:26657
+    grpc-addr: http://stride.stake-take.com:9090
+    account-prefix: stride
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001ustrd
+    key-directory: /home/str/.icq/keys
+    debug: true
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+cl: {}
